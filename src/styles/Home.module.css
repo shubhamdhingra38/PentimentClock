@@ -106,7 +106,7 @@
   padding: 1rem;
   background-image: url(/images/Letter.png);
   margin: 1rem;
-  width: max(40vw, 200px);
+  width: max(45vw, 300px);
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
 }
@@ -125,8 +125,22 @@
   color: #660101;
 }
 .informationHeading {
+  border: 1px solid;
   color: #660101;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.canonicalHoursTitle {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 762px) {
+  .informationHeading {
+  }
 }

@@ -63,7 +63,7 @@ export default function Home() {
 
               <div className={styles.informationHeading}>
                 <img src={"images/Sun.png"}/>
-                <h2>Canonical Hours</h2>
+                <h2 className={styles.canonicalHoursTitle}>Canonical Hours</h2>
                 <img src={"images/Moon.png"}/>
               </div>
 
@@ -83,7 +83,6 @@ export default function Home() {
 
         {/* Right Sprites */}
         <div className={styles.sprites}>
-
           <div className={styles.spriteImageMargarete}>
           </div>
           <div className={styles.catAndUrsula}>
