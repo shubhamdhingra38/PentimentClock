@@ -16,7 +16,7 @@ export default function Home() {
     const intervalId = setInterval(() => {
       const timeNow = moment();
       setTimeNow(timeNow);
-    }, 1_000);
+    }, 30_000);
 
     return () => {
       clearTimeout(intervalId);
