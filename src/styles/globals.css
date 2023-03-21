@@ -15,12 +15,10 @@ body {
 
 html {
     font-size: 27px;
-    font-family: "PentimentFont";
 }
 
 @media only screen and (max-width: 768px) {
     html {
         font-size: 20px;
-        font-family: "PentimentFont";
     }
 }

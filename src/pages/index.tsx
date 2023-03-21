@@ -1,10 +1,14 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import Clock from '@/components/Clock'
 import {useEffect, useState} from "react";
 import moment from "moment/moment";
 import CanonicalMusicPlayer from "@/components/CanonicalMusicPlayer";
+import dynamic from "next/dynamic";
 
+
+const Clock = dynamic(() => import('../components/Clock'), {
+  ssr: false,
+})
 
 
 export default function Home() {
