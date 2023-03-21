@@ -9,8 +9,9 @@ import CanonicalMusicPlayer from "@/components/CanonicalMusicPlayer";
 
 export default function Home() {
   const [timeNow, setTimeNow] = useState(moment());
-
+  console.log("timeNow", timeNow);
   useEffect(() => {
+    console.log("useEffect")
     const timeNow = moment();
     setTimeNow(timeNow);
 
