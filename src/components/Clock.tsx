@@ -3,7 +3,6 @@ import styles from "@/styles/Clock.module.scss"
 import moment from "moment";
 
 const Clock = (props: {time: moment.Moment}) => {
-  console.log("props", props)
   const calculateRotationInDegrees = () => {
     const hour = props.time.hour();
     const minute = props.time.minute();
@@ -15,9 +14,9 @@ const Clock = (props: {time: moment.Moment}) => {
   }
 
   const rotationInDegrees = calculateRotationInDegrees();
-  console.log('rotationInDegrees', rotationInDegrees)
 
   return <div className={styles.clockContainer}>
+    <h2>{props.time.format("HH:mm:ss")}</h2>
     <img className={styles.dial} src={"/images/time_arrow_temp.png"}/>
     <img className={styles.clock} style={{transform: `rotate(${rotationInDegrees}deg)`}} src={"/images/TimeAdvanceWheel.png"}/>
   </div>
