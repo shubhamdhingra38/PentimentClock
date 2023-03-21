@@ -11,6 +11,9 @@ export default function Home() {
   const [timeNow, setTimeNow] = useState(moment());
 
   useEffect(() => {
+    const timeNow = moment();
+    setTimeNow(timeNow);
+
     const intervalId = setInterval(() => {
       const timeNow = moment();
       setTimeNow(timeNow);
