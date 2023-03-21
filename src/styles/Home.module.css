@@ -9,6 +9,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+  background: antiquewhite;
+  padding: 0.3rem;
+  margin: 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .textWrapper:first-letter {
@@ -18,7 +23,6 @@
 
 .spriteImageAndreas {
   left: 0px;
-  border: 1px solid;
   width: 5rem;
   height: 12rem;
   background: url(/images/andreas-sprite.png) no-repeat;
@@ -37,7 +41,6 @@
 }
 
 .spriteImageUrsula {
-  border: 1px solid;
   width: 5rem;
   height: 5rem;
   background: url(/images/ursula-sprite.png) no-repeat;
@@ -46,7 +49,6 @@
 }
 
 .spriteImageCat {
-  border: 1px solid;
   width: 5rem;
   height: 3.5rem;
   background: url(/images/cat-sprite.png) no-repeat;
@@ -58,7 +60,6 @@
   position: fixed;
   right: 0px;
   top: 0px;
-  border: 1px solid;
   width: 15rem;
   height: 15rem;
   background: url(/images/piero-sprite.png) no-repeat;
@@ -70,7 +71,6 @@
   position: fixed;
   left: 0px;
   bottom: 0px;
-  border: 1px solid;
   width: 7rem;
   height: 13rem;
   background: url(/images/margarete-sprite.png) no-repeat;
@@ -91,4 +91,42 @@
 .sprites {
   position: fixed;
   z-index: -100;
+}
+
+.informationImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  min-height: 400px;
+  z-index: -100;
+}
+
+.informationContainer {
+  padding: 1rem;
+  background-image: url(/images/Letter.png);
+  margin: 1rem;
+  width: max(40vw, 200px);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+}
+
+.informationText {
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+.informationText img {
+  height: 4rem;
+}
+.informationText b {
+  color: #660101;
+}
+.informationText:first-letter {
+  color: #660101;
+}
+.informationHeading {
+  color: #660101;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
