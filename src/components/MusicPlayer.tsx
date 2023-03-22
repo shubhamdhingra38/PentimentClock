@@ -24,7 +24,7 @@ const MusicPlayer = (props: {audioSource: string}) => {
 
   return (
     <>
-      <audio ref={audioRef} src={props.audioSource} autoPlay loop />
+      <audio ref={audioRef} src={props.audioSource} loop />
       <img className={styles.playButton} onClick={handleClick}  src={!play ? "/images/volume-crossed.png": "/images/volume.png"}/>
     </>
   );
