@@ -4,13 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link
-          rel="preload"
-          href="/fonts/mo_textura-regular-webfont.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
         <meta name="pentiment-clock" content="PWA App" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
